@@ -45,7 +45,6 @@ public class EchoHello extends HttpServlet {
 			String[] values = request.getParameterValues(name);
 			response.getWriter().append(name + ": ");
 			response.getWriter().append(String.join(", ", values));
-			response.getWriter().append("\n");
 		}
 		
 	}
