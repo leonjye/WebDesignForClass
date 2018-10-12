@@ -30,14 +30,6 @@ public class EchoHello extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		response.getWriter().append("Served at: ").append(request.getContextPath());
-	}
-
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
 		Enumeration<String> enums =  request.getParameterNames();
 		response.getWriter().append("\n");
 		while(enums.hasMoreElements()) {
@@ -45,6 +37,23 @@ public class EchoHello extends HttpServlet {
 			String[] values = request.getParameterValues(name);
 			response.getWriter().append(name + ": ");
 			response.getWriter().append(String.join(", ", values));
+			response.getWriter().append("\n");
+		}
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		response.getWriter().append("Served at: ").append(request.getContextPath());
+		Enumeration<String> enums =  request.getParameterNames();
+		response.getWriter().append("\n");
+		while(enums.hasMoreElements()) {
+			String name = enums.nextElement();
+			String[] values = request.getParameterValues(name);
+			response.getWriter().append(name + ": ");
+			response.getWriter().append(String.join(", ", values));
+			response.getWriter().append("\n");
 		}
 		
 	}
