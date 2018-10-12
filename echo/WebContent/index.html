@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <h1>hi</h1>
+    <form method="POST" action="http://localhost:8080/echo/upload" enctype="multipart/form-data">
+        hello: <input type="text" name="name" id="txtName" /><br/>
+        hello: <input type="range" name="rngBar" id="rngBar" min="0" max="100" step="10" value="0"/><br/>
+        <input type="checkbox" name="chkGame" value="ios" />IOS <br/>
+        <input type="checkbox" name="chkGame" value="android" />android <br/>
+        <input type="checkbox" name="chkGame" value="WinMobile" />WinMobile <br/>
+        fileupload: <input type="file" name="file" accept=".pdf" /><br/>
+        <input type="submit" value="submit it"/>
+    </form>
+</body>
+</html>
