@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <header><img src="header.png" class="img-fluid"></header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">JJ</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav mr-auto">
+                    <a class="nav-item nav-link active" href="#">Home<span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#">Features</a>
+                    <a class="nav-item nav-link" href="#">Pricing</a>
+                    <a class="nav-item nav-link disabled" href="#">Disabled</a>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        拉我啊你
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="triggerId">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item disabled" href="#">Disabled action</a>
+                        <h6 class="dropdown-header">Section header</h6>
+                        <a class="dropdown-item" href="#">Action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">After divider action</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="row pt-3">
+            <div class="col-sm-3">
+                <ul class="list-group">
+                    <li class="list-group-item">個人資料</li>
+                    <li class="list-group-item">相關訊息</li>
+                    <li class="list-group-item">沒想到寫什麼-1</li>
+                    <li class="list-group-item">沒想到寫什麼-2</li>
+                </ul>
+            </div>
+            <div class="col-sm-9">
+                <h2>Personal Info</h2>
+                <form>
+                    <dl class="form-group row">
+                        <dt class="col-sm-2">姓名</dt>
+                        <dd class="col-sm-10">
+                            <input type="text" id="txtInput" class="form-control" placeholder="這裡輸入一下" />
+                        </dd>
+                        <dt class="col-sm-2">按鈕測試</dt>
+                        <dd class="col-sm-10" role="group">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-danger">按鈕1</button>
+                                <button type="button" class="btn btn-secondary">按鈕2</button>
+                                <button type="button" class="btn btn-secondary">按鈕3</button>
+                            </div>
+                        </dd>
+                        <dt class="col-sm-2">
+                        </dt>
+                        <dd class="col-sm-10 text-right">
+                            <input type="submit" class="btn btn-success" value="submit" />
+                            <input type="button" class="btn btn-default" value="cancel" />
+                        </dd>
+                    </dl>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
+                        aria-controls="v-pills-home" aria-selected="true">Home</a>
+                    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
+                        aria-controls="v-pills-profile" aria-selected="false">Profile</a>
+                    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
+                        aria-controls="v-pills-messages" aria-selected="false">Messages<span class="badge badge-warning">99+</span></a>
+                    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab"
+                        aria-controls="v-pills-settings" aria-selected="false">Settings</a>
+                </div>
+            </div>
+            <div class="col-9">
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">段落1</div>
+                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                        <h2>Personal Info</h2>
+                        <form>
+                            <dl class="form-group row">
+                                <dt class="col-sm-2">姓名</dt>
+                                <dd class="col-sm-10">
+                                    <input type="text" id="txtInput" class="form-control" placeholder="這裡輸入一下" />
+                                </dd>
+                                <dt class="col-sm-2">按鈕測試</dt>
+                                <dd class="col-sm-10" role="group">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-danger">按鈕1</button>
+                                        <button type="button" class="btn btn-secondary">按鈕2</button>
+                                        <button type="button" class="btn btn-secondary">按鈕3</button>
+                                    </div>
+                                </dd>
+                                <dt class="col-sm-2">
+                                </dt>
+                                <dd class="col-sm-10 text-right">
+                                    <input type="submit" class="btn btn-success" value="submit" />
+                                    <input type="button" class="btn btn-default" value="cancel" />
+                                </dd>
+                            </dl>
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-profile-tab">段落3</div>
+                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                        <ul class="page pagination">
+                            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
